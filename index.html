@@ -66,6 +66,23 @@
       display: inline-block;
       min-width: 250px;
     }
+      footer {
+    background-color: #161b22;   /* dark background */
+    color: #aaa;                 /* grey text */
+    padding: 12px 0;
+    font-size: 13px;
+    text-align: center;
+    border-top: 1px solid #333;  /* thin line on top */
+    position: fixed;             /* stick to bottom */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  footer .highlight {
+    color: #58a6ff;              /* shiny blue for your name */
+    font-weight: bold;
+    text-shadow: 0 0 6px #58a6ff;
+  }
   </style>
 </head>
 <body>
@@ -81,7 +98,9 @@
   </div>
 
   <div id="result"></div>
-
+<footer>
+  Powered by <span class="highlight">Yaseen Shahid</span> &copy; All Rights Reserved
+</footer>
   <script>
     function calculateShare() {
       const amount = parseFloat(document.getElementById("amount").value);
@@ -110,3 +129,4 @@
   </script>
 </body>
 </html>
+
